@@ -8,17 +8,17 @@
  */
 const getYearsToDoubleAge = (fatherAge, sonAge) => {
   if (fatherAge - sonAge < 15 || sonAge < 0) {
-    return 9999;
+    return NaN;
   }
 
   return fatherAge - 2 * sonAge;
 };
 
 const FATHER_AGE = 60;
-const SON_AGE = 35;
+const SON_AGE = 55;
 let numberYears = getYearsToDoubleAge(FATHER_AGE, SON_AGE);
 
-if (numberYears === 9999) {
+if (isNaN(numberYears)) {
   console.log('Error!');
 }
 
