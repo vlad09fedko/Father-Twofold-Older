@@ -7,9 +7,7 @@
  * @returns {number} numberYears
  */
 const getYearsToDoubleAge = (fatherAge, sonAge) => {
-  if (fatherAge - sonAge < 15 || sonAge < 0) {
-    return NaN;
-  }
+  if (fatherAge - sonAge < 15 || sonAge < 0) return NaN;
 
   return fatherAge - 2 * sonAge;
 };
