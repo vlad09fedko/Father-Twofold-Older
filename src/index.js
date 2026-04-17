@@ -15,7 +15,7 @@ const getYearsToDoubleAge = (fatherAge, sonAge) => {
 };
 
 const FATHER_AGE = 60;
-const SON_AGE = 55;
+const SON_AGE = 40;
 let numberYears = getYearsToDoubleAge(FATHER_AGE, SON_AGE);
 
 if (isNaN(numberYears)) {
@@ -24,13 +24,11 @@ if (isNaN(numberYears)) {
 
 if (numberYears === 0) {
   console.log('The father is now twice as old as his son.');
-}
-if (numberYears > 0) {
+} else if (numberYears > 0) {
   console.log(
     `Father will be twice as old as his son in ${numberYears} ${numberYears === 1 ? 'year' : 'years'}`,
   );
-}
-if (numberYears < 0) {
+} else if (numberYears < 0) {
   numberYears = Math.abs(numberYears);
   console.log(
     `Father was twice as old as his son ${numberYears} ${numberYears === 1 ? 'year' : 'years'} ago`,
